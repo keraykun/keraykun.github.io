@@ -887,6 +887,7 @@ border-top-left-radius: 10px;
 
 /* FOOTER */
 footer#contact{
+min-height:830px;
 background:var(--nav-color);
 display: flex;
 flex-direction: column;
