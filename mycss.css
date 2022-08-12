@@ -968,7 +968,7 @@ column-gap: 15px;
 section#wave{
 position: relative;
 width: 100vw;
-height: 100% !important;
+height: 10vh;
 overflow: hidden;
 }
 section#wave .wave{
