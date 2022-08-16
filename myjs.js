@@ -13,7 +13,8 @@ window.addEventListener('DOMContentLoaded',()=>{
   const nav = new IntersectionObserver(navFunction,{rootMargin:'-50% 0px'})
   const aside = new IntersectionObserver(asideFunction,{rootMargin:'-50% 0px'})
   const side = new IntersectionObserver(sideFunction,{rootMargin:'-50% 0px'})
-
+  const items = new IntersectionObserver(itemsFunction,{rootMargin:'-50% 0px'})
+   
   document.querySelectorAll('.nav-scroll-list').forEach(div=>{
   	nav.observe(div)
   })
@@ -23,6 +24,10 @@ window.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.side-scroll-list').forEach(div=>{
   	side.observe(div)
   })
+  document.querySelectorAll('div.items').forEach(item=>{
+	items.observe(item)
+  })
+	
   let frameworks = document.querySelectorAll('section article div#framework ul li')
   frameworks.forEach(frameworkFunction)
   let procedurals = document.querySelectorAll('section article div#procedural ul li')
@@ -137,7 +142,16 @@ window.addEventListener('DOMContentLoaded',()=>{
 	     }
   	}) 
   }
-
+function itemsFunction(items){
+    items.forEach(item=>{
+	let selected = item.target
+	if(item.isIntersecting){
+	   selected.classList.add('opacity-show')
+	}else{
+	   selected.classList.remove('opacity-show')
+	}
+   })
+}
 function frameworkFunction(framework){
 	let frameworks = document.querySelectorAll('section article div#framework ul li')
 	framework.addEventListener('click',event=>{	
