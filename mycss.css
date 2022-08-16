@@ -48,6 +48,11 @@ li:hover{
 color:white;
 }
 
+.opacity-show{
+opacity: 1 !important;
+transition: opacity 800ms ease-in;
+}
+
 .active{
 color:white;
 border-bottom:  1px solid #f7f7f7;
@@ -825,6 +830,8 @@ padding: 0;
 
 section#portfolio >* div.items{
 position: relative;
+opacity: 0.2;
+transition: opacity 800ms ease-out;
 }
 
 section#portfolio >* div.items:hover ol.items-category, section#portfolio >* div.items:hover div.items-background{
