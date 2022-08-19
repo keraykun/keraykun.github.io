@@ -157,6 +157,12 @@ border-right-width: 10px;
 }
 }
 
+header#home small{
+font-size: 1rem;
+color: whitesmoke;
+letter-spacing: 1px;
+}
+
 /*--end header---*/
 
 
@@ -1251,7 +1257,9 @@ font-family: 'Anonymous Pro', monospace;
 color: white;
 font-size: 1.5rem;
 }
-
+header#home small{
+font-size: 0.5rem !important;
+}
 /*--end header---*/
 
 nav.nav div.hamburger{
