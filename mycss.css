@@ -392,6 +392,7 @@ div.development{
 padding: 20px 0px;
 display: flex;
 justify-content: space-around;
+overflow-x: hidden;
 }
 div.development img{
 width: 60px;
