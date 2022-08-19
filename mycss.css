@@ -442,11 +442,11 @@ transform: rotate(360deg);
 
 .development-left-animation{
 opacity: 1;
--webkit-animation: animation-left 1s linear;
--moz-animation: animation-left 1s linear;
--ms-animation: animation-left 1s linear;
--o-animation: animation-left 1s linear;
-animation: animation-left 1s linear;
+-webkit-animation: animation-left 2s linear;
+-moz-animation: animation-left 2s linear;
+-ms-animation: animation-left 2s linear;
+-o-animation: animation-left 2s linear;
+animation: animation-left 2s linear;
 }
 
 @keyframes animation-left {
@@ -499,11 +499,11 @@ transform: translateX(0%);
 
 .development-right-animation{
 opacity: 1;
--webkit-animation: animation-right 1s linear;
--moz-animation: animation-right 1s linear;
--ms-animation: animation-right 1s linear;
--o-animation: animation-right 1s linear;
-animation: animation-right 1s linear;
+-webkit-animation: animation-right 2s linear;
+-moz-animation: animation-right 2s linear;
+-ms-animation: animation-right 2s linear;
+-o-animation: animation-right 2s linear;
+animation: animation-right 2s linear;
 }
 
 @keyframes animation-right {
