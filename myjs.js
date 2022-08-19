@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   const aside = new IntersectionObserver(asideFunction,{rootMargin:'-50% 0px'})
   const side = new IntersectionObserver(sideFunction,{rootMargin:'-50% 0px'})
   const items = new IntersectionObserver(itemsFunction,{rootMargin:'-50% 0px'})
-  const development = new IntersectionObserver(developmentFunction)
+  const development = new IntersectionObserver(developmentFunction,{threshold:0.5})
   
   development.observe(document.querySelector('div.development'))
 	
