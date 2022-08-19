@@ -399,7 +399,9 @@ width: 60px;
 height: 60px;
 
 }
-
+.development1,.development3{
+  opacity: 0;
+}
 .development2{
 -webkit-animation: rotating 7s linear infinite;
 -moz-animation: rotating 7s linear infinite;
@@ -439,6 +441,7 @@ transform: rotate(360deg);
 
 
 .development-left-animation{
+opacity: 1;
 -webkit-animation: animation-left 1s linear;
 -moz-animation: animation-left 1s linear;
 -ms-animation: animation-left 1s linear;
@@ -495,6 +498,7 @@ transform: translateX(0%);
 }
 
 .development-right-animation{
+opacity: 1;
 -webkit-animation: animation-right 1s linear;
 -moz-animation: animation-right 1s linear;
 -ms-animation: animation-right 1s linear;
