@@ -14,7 +14,10 @@ window.addEventListener('DOMContentLoaded',()=>{
   const aside = new IntersectionObserver(asideFunction,{rootMargin:'-50% 0px'})
   const side = new IntersectionObserver(sideFunction,{rootMargin:'-50% 0px'})
   const items = new IntersectionObserver(itemsFunction,{rootMargin:'-50% 0px'})
-   
+  const development = new IntersectionObserver(developmentFunction)
+  
+  development.observe(document.querySelector('div.development'))
+	
   document.querySelectorAll('.nav-scroll-list').forEach(div=>{
   	nav.observe(div)
   })
@@ -237,6 +240,16 @@ function proceduralFunction(procedural){
 	  })	
 	})
 }
+ function developmentFunction(developments){
+  	developments.forEach(dev=>{
+  		if(dev.isIntersecting){
+  			dev.target.children[0].classList.add('development-left-animation')
+  			dev.target.children[2].classList.add('development-right-animation')
+  		}  
+  	})
+  }
+})
+
 function menuBurger(event){
 	let menu = event.currentTarget
 	let hamburger = document.querySelector('#hamburger')
