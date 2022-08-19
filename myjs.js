@@ -248,7 +248,6 @@ function proceduralFunction(procedural){
   		}  
   	})
   }
-})
 
 function menuBurger(event){
 	let menu = event.currentTarget
